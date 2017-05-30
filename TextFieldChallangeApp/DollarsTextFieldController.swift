@@ -11,19 +11,34 @@ import UIKit
 
 class dollarsTextFieldController: NSObject, UITextFieldDelegate{
     
-    
+    private lazy var textFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        return formatter
+    }()
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let numberFromString = Int(textField.text!)
-            let NSnumberFromString = NSNumber(value: numberFromString!)
-            print(NSnumberFromString)
+//        textField.text = "$0.00"
+//        var textArray = [0,0,0]
+//        let numberFromString = Int(textField.text!)
+//            let NSnumberFromString = NSNumber(value: numberFromString!)
+//            print(NSnumberFromString)
+//        
+//           let formatter = NumberFormatter()
+//            formatter.numberStyle = .currency
+//            
+//            textField.text = "\(formatter.string(from: NSnumberFromString))"
+//        
+//            return true
+       // var newText = ""
+        var digit = Int()
+        var digitText = ""
         
-           let formatter = NumberFormatter()
-            formatter.numberStyle = .currency
-            
-            textField.text = "\(formatter.string(from: NSnumberFromString))"
+        //let newText = (textField.text! as String).replacingCharacters(in: range, with: string)
         
-            return true
+        
+        
+        return false
     }
     
 

@@ -24,13 +24,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if (textField.text?.characters.count)! > 4 {
-            textField.isEnabled = false
-        }
         textField.returnKeyType = UIReturnKeyType.next
         textField.isEnabled = true
         textField.clearsOnBeginEditing = true
-        return true
+        
+        if (textField.text?.characters.count)! < 5 {
+            return true
+        }else {
+            return false
+        }
     }
 
     override func didReceiveMemoryWarning() {
