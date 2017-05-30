@@ -31,12 +31,26 @@ class dollarsTextFieldController: NSObject, UITextFieldDelegate{
 //        
 //            return true
        // var newText = ""
-        var digit = Int()
-        var digitText = ""
         
-        //let newText = (textField.text! as String).replacingCharacters(in: range, with: string)
+        func centsFromString(string:String)-> Double {
+            let numbers = "1234567890"
+            var centsString = String()
+            
+            for i in string.characters {
+                if numbers.contains(String(i)) {
+                    centsString.append(i)
+                }
+            }
+            return Double(centsString)!/100.0
+        }
+    
+        let oldText = textField.text! as NSString
         
+        let newText = oldText.replacingCharacters(in: range, with: string)
         
+        let cents = centsFromString(string: newText)
+        
+        textField.text = textFormatter.string(from: cents as NSNumber)
         
         return false
     }
