@@ -13,7 +13,7 @@
 		92B7071D1ED489890051E74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B7071C1ED489890051E74D /* Assets.xcassets */; };
 		92B707201ED489890051E74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B7071E1ED489890051E74D /* LaunchScreen.storyboard */; };
 		92B707281ED48B700051E74D /* DollarsTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B707271ED48B700051E74D /* DollarsTextFieldController.swift */; };
-		92B7072A1ED48B870051E74D /* SwitchTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B707291ED48B870051E74D /* SwitchTextFieldController.swift */; };
+		92B7072A1ED48B870051E74D /* ZipCodeTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B707291ED48B870051E74D /* ZipCodeTextFieldController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		92B7071F1ED489890051E74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B707211ED489890051E74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92B707271ED48B700051E74D /* DollarsTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DollarsTextFieldController.swift; sourceTree = "<group>"; };
-		92B707291ED48B870051E74D /* SwitchTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchTextFieldController.swift; sourceTree = "<group>"; };
+		92B707291ED48B870051E74D /* ZipCodeTextFieldController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				92B707211ED489890051E74D /* Info.plist */,
 				92B707171ED489890051E74D /* ViewController.swift */,
 				92B707271ED48B700051E74D /* DollarsTextFieldController.swift */,
-				92B707291ED48B870051E74D /* SwitchTextFieldController.swift */,
+				92B707291ED48B870051E74D /* ZipCodeTextFieldController.swift */,
 			);
 			path = TextFieldChallangeApp;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B707181ED489890051E74D /* ViewController.swift in Sources */,
-				92B7072A1ED48B870051E74D /* SwitchTextFieldController.swift in Sources */,
+				92B7072A1ED48B870051E74D /* ZipCodeTextFieldController.swift in Sources */,
 				92B707161ED489890051E74D /* AppDelegate.swift in Sources */,
 				92B707281ED48B700051E74D /* DollarsTextFieldController.swift in Sources */,
 			);
@@ -307,6 +307,7 @@
 				92B707261ED489890051E74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -18,20 +18,6 @@ class dollarsTextFieldController: NSObject, UITextFieldDelegate{
     }()
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-//        textField.text = "$0.00"
-//        var textArray = [0,0,0]
-//        let numberFromString = Int(textField.text!)
-//            let NSnumberFromString = NSNumber(value: numberFromString!)
-//            print(NSnumberFromString)
-//        
-//           let formatter = NumberFormatter()
-//            formatter.numberStyle = .currency
-//            
-//            textField.text = "\(formatter.string(from: NSnumberFromString))"
-//        
-//            return true
-       // var newText = ""
-        
         func centsFromString(string:String)-> Double {
             let numbers = "1234567890"
             var centsString = String()

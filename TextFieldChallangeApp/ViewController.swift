@@ -15,25 +15,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var switchTextSwitch: UISwitch?
 
     let dollarDelegate = dollarsTextFieldController()
+    let zipDelegate = ZipCodeTextFieldController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.zipCodeTextField?.delegate = self
+        self.zipCodeTextField?.delegate = zipDelegate
         self.dollarsTextField?.delegate = dollarDelegate
+        self.switchTextField?.delegate = self
+        //let switchBool = switchTextSwitch?.isOn
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        textField.returnKeyType = UIReturnKeyType.next
-        textField.isEnabled = true
-        textField.clearsOnBeginEditing = true
-        
-        if (textField.text?.characters.count)! < 5 {
-            return true
-        }else {
-            return false
+  
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string:     String) -> Bool {
+        return (switchTextSwitch?.isOn)!
         }
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
